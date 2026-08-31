@@ -1,0 +1,927 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>V-Incept</title>
+    <link rel="stylesheet" href="styles.css?v=doc-fields-ai-1">
+  </head>
+  <body>
+    <section class="login-screen" id="loginScreen">
+      <div class="login-intro">
+        <div class="login-brand-row">
+          <svg class="login-logo" role="img" aria-label="Vayana" xmlns="http://www.w3.org/2000/svg" width="175" height="40" viewBox="0 0 175 40">
+            <g transform="translate(0 0)">
+              <g transform="translate(52.46 9.346)">
+                <path d="M56.6,10.4h4.019L66.88,26.475,73.142,10.4h4.019L68.469,31.428H65.2Z" transform="translate(-56.6 -10.4)" fill="#293978"/>
+                <path d="M84.052,10.2h3.364l9.159,21.028H92.744l-2.15-5.047H80.688l-2.15,5.047H74.8Zm5.234,12.71L85.641,14.5,82.09,22.91Z" transform="translate(-57.791 -10.2)" fill="#293978"/>
+                <path d="M102.118,23.01,93.8,10.3h4.393l5.794,9.252,5.888-9.252h4.206l-8.318,12.617v8.318h-3.738V23.01Z" transform="translate(-59.033 -10.3)" fill="#293978"/>
+                <path d="M120.446,10.2h3.364l9.159,21.028h-3.925l-2.15-5.047h-9.907l-2.15,5.047H111.1Zm5.327,12.71L122.128,14.5l-3.551,8.411Z" transform="translate(-60.165 -10.2)" fill="#293978"/>
+                <path d="M137.2,10.4h3.365L151.78,24.886V10.4h3.645V31.335H152.34l-11.5-14.86v14.86H137.2Z" transform="translate(-61.873 -10.4)" fill="#293978"/>
+                <path d="M168.446,10.2h3.365l9.159,21.028h-3.925l-2.15-5.047h-9.907l-2.15,5.047H159.1Zm5.234,12.71L170.035,14.5l-3.551,8.411Z" transform="translate(-63.305 -10.2)" fill="#293978"/>
+              </g>
+              <path d="M25.234,40l1.589-2.43L2.991,0H0Z" fill="#cd2627" fill-rule="evenodd"/>
+              <path d="M29.163,34.58l1.5-2.43L10.284,0H7.2Z" transform="translate(-0.471)" fill="#cd2627" fill-rule="evenodd"/>
+              <path d="M33.211,28.972l1.5-2.43L17.884,0H14.8Z" transform="translate(-0.968)" fill="#cd2627" fill-rule="evenodd"/>
+              <path d="M25.4,37.57,26.9,40,52.223,0H49.138Z" transform="translate(-1.662)" fill="#293978" fill-rule="evenodd"/>
+              <path d="M21.7,32.056l1.5,2.336L44.971,0H41.887Z" transform="translate(-1.42)" fill="#293978" fill-rule="evenodd"/>
+              <path d="M17.9,26.449l1.5,2.336L37.62,0H34.536Z" transform="translate(-1.171)" fill="#293978" fill-rule="evenodd"/>
+              <g transform="translate(166.906 9.346)">
+                <path d="M230.982-85.262H229.7v-.694h3.335v.694H231.75V-81.9h-.764Z" transform="translate(-229.7 85.956)" fill="#293978"/>
+                <path d="M237.608-84.838l-1.32,1.76h-.151l-1.29-1.766V-81.9h-.764V-85.95h.879l1.268,1.744L237.5-85.95h.874V-81.9h-.764Z" transform="translate(-230.279 85.955)" fill="#293978"/>
+              </g>
+            </g>
+          </svg>
+          <strong>V-Incept</strong>
+        </div>
+        <div class="onboarding-login-art" aria-hidden="true">
+          <img src="assets/onboarding-login-sticker.png" alt="">
+        </div>
+        <div class="login-portal-label">
+          <span aria-hidden="true">◇</span>
+          <strong id="loginTitle">V-Incept</strong>
+          <small id="loginCopy">Sign in to V-Incept onboarding workspace</small>
+        </div>
+        <span class="eyebrow" id="loginEyebrow">V-Incept access</span>
+      </div>
+      <div class="login-grid">
+        <div class="login-page active-login-page" data-login-page-panel="candidate">
+          <form class="login-card candidate-login" id="candidateLoginForm" data-login-form="candidate" autocomplete="off">
+            <div>
+              <h2>V-Incept Candidate Portal</h2>
+              <p>Sign in to your V-Incept candidate onboarding workspace</p>
+            </div>
+            <input class="login-autofill-trap" type="text" name="email" tabindex="-1" aria-hidden="true" autocomplete="username" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none">
+            <input class="login-autofill-trap" type="password" name="password" tabindex="-1" aria-hidden="true" autocomplete="current-password" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none">
+            <label>
+              Email
+              <input id="candidateLoginEmail" class="login-empty-field" data-login-email type="text" inputmode="email" name="vincept-candidate-login" value="" placeholder="" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false" readonly>
+            </label>
+            <label>
+              Password
+              <input id="candidateLoginPassword" class="login-empty-field" data-login-password type="password" name="vincept-candidate-secret" value="" placeholder="" autocomplete="new-password" data-password-input readonly>
+            </label>
+            <label class="show-password-control">
+              <input type="checkbox" data-toggle-password>
+              <span>Show password</span>
+            </label>
+            <div class="login-note">
+              <strong>First login security</strong>
+              <span>First-time candidates should sign in here using the unique temporary password sent via email.</span>
+            </div>
+            <button class="primary" type="submit">Sign in</button>
+            <button class="login-text-link" type="button" id="forgotPasswordLink">Forgot password?</button>
+          </form>
+
+          <form class="login-card password-reset-card is-hidden" id="candidateForgotPasswordForm">
+            <div>
+              <h2>Forgot password</h2>
+              <p>Enter your candidate login email. A password change link will be emailed to your personal email on file (not shown here).</p>
+            </div>
+            <label>
+              Login Email
+              <input id="forgotPasswordEmail" type="email" autocomplete="email" required>
+            </label>
+            <button class="primary" type="submit">Send reset link</button>
+            <button class="login-text-link" type="button" id="backToLoginFromForgot">Back to sign in</button>
+            <small id="forgotPasswordState" aria-live="polite">Use the same login email you use to sign in.</small>
+          </form>
+
+          <form class="login-card password-reset-card is-hidden" id="candidateResetPasswordForm">
+            <div>
+              <h2>Create a new password</h2>
+              <p>Choose a new password for your candidate portal account.</p>
+            </div>
+            <label>
+              New Password
+              <input id="candidateResetNewPassword" type="password" autocomplete="new-password" required minlength="6" data-password-input>
+            </label>
+            <label>
+              Confirm Password
+              <input id="candidateResetConfirmPassword" type="password" autocomplete="new-password" required minlength="6" data-password-input>
+            </label>
+            <label class="show-password-control">
+              <input type="checkbox" data-toggle-password>
+              <span>Show passwords</span>
+            </label>
+            <button class="primary" type="submit">Update Password</button>
+            <button class="login-text-link" type="button" id="backToLoginFromReset">Back to sign in</button>
+            <small id="candidateResetPasswordState" aria-live="polite">Use at least 6 characters.</small>
+          </form>
+
+          <form class="login-card password-reset-card is-hidden" id="candidatePasswordForm">
+            <div>
+              <h2>Create your password</h2>
+              <p>Use your unique temporary password to create your private portal password.</p>
+            </div>
+            <label>
+              Candidate Email
+              <input id="candidateSetupEmail" class="login-empty-field" type="text" inputmode="email" autocomplete="off" required>
+            </label>
+            <label>
+              Temporary Password
+              <input id="candidateSetupTemporaryPassword" type="password" autocomplete="current-password" required data-password-input>
+            </label>
+            <label>
+              New Password
+              <input id="candidateNewPassword" type="password" autocomplete="new-password" required minlength="6" data-password-input>
+            </label>
+            <label>
+              Confirm Password
+              <input id="candidateConfirmPassword" type="password" autocomplete="new-password" required minlength="6" data-password-input>
+            </label>
+            <label class="show-password-control">
+              <input type="checkbox" data-toggle-password>
+              <span>Show passwords</span>
+            </label>
+            <button class="primary" type="submit">Create Password</button>
+            <small id="candidatePasswordState">Use at least 6 characters.</small>
+          </form>
+        </div>
+
+        <div class="login-page" data-login-page-panel="admin">
+          <form class="login-card admin-login" id="adminLoginForm" data-login-form="admin" autocomplete="off">
+            <div>
+              <h2>V-Incept Admin Portal</h2>
+              <p>Sign in to V-Incept HR workspace</p>
+            </div>
+            <input class="login-autofill-trap" type="text" name="email" tabindex="-1" aria-hidden="true" autocomplete="username" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none">
+            <input class="login-autofill-trap" type="password" name="password" tabindex="-1" aria-hidden="true" autocomplete="current-password" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none">
+            <label>
+              Work Email
+              <input id="adminLoginEmail" class="login-empty-field" data-login-email type="text" inputmode="email" name="vincept-admin-login" value="" placeholder="" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false" readonly>
+            </label>
+            <label>
+              Password
+              <input id="adminLoginPassword" class="login-empty-field" data-login-password type="password" name="vincept-admin-secret" value="" placeholder="" autocomplete="new-password" data-password-input readonly>
+            </label>
+            <label class="show-password-control">
+              <input type="checkbox" data-toggle-password>
+              <span>Show password</span>
+            </label>
+            <div class="login-note">
+              <strong>First login security</strong>
+              <span>First-time HR logins must change the temporary password before opening V-Incept. Central admin sees all companies; company HR only sees their entity.</span>
+            </div>
+            <button class="primary" type="submit">Sign in</button>
+            <button class="login-text-link" type="button" id="adminForgotPasswordLink">Forgot password?</button>
+          </form>
+
+          <form class="login-card password-reset-card is-hidden" id="adminForgotPasswordForm">
+            <div>
+              <h2>Forgot admin password</h2>
+              <p>Enter your admin work email. A password reset link will be sent to that address.</p>
+            </div>
+            <label>
+              Work Email
+              <input id="adminForgotPasswordEmail" type="email" autocomplete="email" required>
+            </label>
+            <button class="primary" type="submit">Send reset link</button>
+            <button class="login-text-link" type="button" id="backToAdminLoginFromForgot">Back to sign in</button>
+            <small id="adminForgotPasswordState" aria-live="polite">Use the same work email you use to sign in.</small>
+          </form>
+
+          <form class="login-card password-reset-card is-hidden" id="adminResetPasswordForm">
+            <div>
+              <h2>Create a new admin password</h2>
+              <p>Choose a new password for your admin portal account.</p>
+            </div>
+            <label>
+              New Password
+              <input id="adminResetNewPassword" type="password" autocomplete="new-password" required minlength="6" data-password-input>
+            </label>
+            <label>
+              Confirm Password
+              <input id="adminResetConfirmPassword" type="password" autocomplete="new-password" required minlength="6" data-password-input>
+            </label>
+            <label class="show-password-control">
+              <input type="checkbox" data-toggle-password>
+              <span>Show passwords</span>
+            </label>
+            <button class="primary" type="submit">Update Password</button>
+            <button class="login-text-link" type="button" id="backToAdminLoginFromReset">Back to sign in</button>
+            <small id="adminResetPasswordState" aria-live="polite">Use at least 6 characters.</small>
+          </form>
+
+          <form class="login-card password-reset-card is-hidden" id="adminPasswordForm">
+            <div>
+              <h2>Create your HR password</h2>
+              <p>Change the temporary password before opening the V-Incept workspace.</p>
+            </div>
+            <label>
+              New Password
+              <input id="adminNewPassword" type="password" autocomplete="new-password" required minlength="6" data-password-input>
+            </label>
+            <label>
+              Confirm New Password
+              <input id="adminConfirmPassword" type="password" autocomplete="new-password" required minlength="6" data-password-input>
+            </label>
+            <label class="show-password-control">
+              <input type="checkbox" data-toggle-password>
+              <span>Show password</span>
+            </label>
+            <button class="primary" type="submit">Save Password</button>
+            <small id="adminPasswordState">Use at least 6 characters.</small>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="app-shell is-locked" id="appShell">
+      <aside class="sidebar" aria-label="Primary">
+        <div class="brand">
+          <svg class="brand-logo" role="img" aria-label="Vayana" xmlns="http://www.w3.org/2000/svg" width="175" height="40" viewBox="0 0 175 40">
+            <g transform="translate(0 0)">
+              <g transform="translate(52.46 9.346)">
+                <path d="M56.6,10.4h4.019L66.88,26.475,73.142,10.4h4.019L68.469,31.428H65.2Z" transform="translate(-56.6 -10.4)" fill="#293978"/>
+                <path d="M84.052,10.2h3.364l9.159,21.028H92.744l-2.15-5.047H80.688l-2.15,5.047H74.8Zm5.234,12.71L85.641,14.5,82.09,22.91Z" transform="translate(-57.791 -10.2)" fill="#293978"/>
+                <path d="M102.118,23.01,93.8,10.3h4.393l5.794,9.252,5.888-9.252h4.206l-8.318,12.617v8.318h-3.738V23.01Z" transform="translate(-59.033 -10.3)" fill="#293978"/>
+                <path d="M120.446,10.2h3.364l9.159,21.028h-3.925l-2.15-5.047h-9.907l-2.15,5.047H111.1Zm5.327,12.71L122.128,14.5l-3.551,8.411Z" transform="translate(-60.165 -10.2)" fill="#293978"/>
+                <path d="M137.2,10.4h3.365L151.78,24.886V10.4h3.645V31.335H152.34l-11.5-14.86v14.86H137.2Z" transform="translate(-61.873 -10.4)" fill="#293978"/>
+                <path d="M168.446,10.2h3.365l9.159,21.028h-3.925l-2.15-5.047h-9.907l-2.15,5.047H159.1Zm5.234,12.71L170.035,14.5l-3.551,8.411Z" transform="translate(-63.305 -10.2)" fill="#293978"/>
+              </g>
+              <path d="M25.234,40l1.589-2.43L2.991,0H0Z" fill="#cd2627" fill-rule="evenodd"/>
+              <path d="M29.163,34.58l1.5-2.43L10.284,0H7.2Z" transform="translate(-0.471)" fill="#cd2627" fill-rule="evenodd"/>
+              <path d="M33.211,28.972l1.5-2.43L17.884,0H14.8Z" transform="translate(-0.968)" fill="#cd2627" fill-rule="evenodd"/>
+              <path d="M25.4,37.57,26.9,40,52.223,0H49.138Z" transform="translate(-1.662)" fill="#293978" fill-rule="evenodd"/>
+              <path d="M21.7,32.056l1.5,2.336L44.971,0H41.887Z" transform="translate(-1.42)" fill="#293978" fill-rule="evenodd"/>
+              <path d="M17.9,26.449l1.5,2.336L37.62,0H34.536Z" transform="translate(-1.171)" fill="#293978" fill-rule="evenodd"/>
+              <g transform="translate(166.906 9.346)">
+                <path d="M230.982-85.262H229.7v-.694h3.335v.694H231.75V-81.9h-.764Z" transform="translate(-229.7 85.956)" fill="#293978"/>
+                <path d="M237.608-84.838l-1.32,1.76h-.151l-1.29-1.766V-81.9h-.764V-85.95h.879l1.268,1.744L237.5-85.95h.874V-81.9h-.764Z" transform="translate(-230.279 85.955)" fill="#293978"/>
+              </g>
+            </g>
+          </svg>
+          <div>
+            <strong>V-Incept</strong>
+            <span>Documents</span>
+          </div>
+        </div>
+        <nav class="nav-list">
+          <div class="nav-section" data-access="admin">Manage</div>
+          <a class="active" href="#candidate-documents" data-access="candidate" data-candidate-page="documents"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M12 18v-6m-3 3 3-3 3 3"/></svg></span>Upload Documents</a>
+          <a href="#candidate-queries" data-access="candidate" data-candidate-page="queries"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg></span>Raise Query <strong id="candidateQueryBadge" class="nav-badge">0</strong></a>
+          <button class="active" type="button" data-access="admin" data-admin-page="employees"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6m3-3h-6"/></svg></span>Candidates <strong id="reviewBadge" class="nav-badge">0</strong></button>
+          <button type="button" data-access="admin" data-admin-page="onboarded"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m16 11 2 2 4-5"/></svg></span>Onboarded Candidates <strong id="onboardedBadge" class="nav-badge">0</strong></button>
+          <button type="button" data-access="admin" data-admin-page="addEmployee"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a7 7 0 0 1 14 0v1M19 5v6m3-3h-6"/></svg></span>Add New Candidate</button>
+          <button type="button" data-access="admin" data-admin-page="emailSettings"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>Email Settings</button>
+          <button type="button" data-access="admin" data-admin-page="queries"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg></span>Queries <strong id="adminQueryBadge" class="nav-badge">0</strong></button>
+          <div class="nav-section" data-access="admin">Reports</div>
+          <button type="button" data-access="admin" data-admin-page="overview"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V10h4v10M10 20V4h4v16m2 0v-7h4v7M2 20h20"/></svg></span>Overview</button>
+        </nav>
+        <div class="sidebar-card">
+          <span class="status-dot"></span>
+          <div>
+            <strong id="sidebarStatusTitle">Preboarding</strong>
+            <span id="sidebarStatusText">Documents pending</span>
+          </div>
+        </div>
+      </aside>
+
+      <main>
+        <header class="topbar">
+          <label class="admin-company-switcher" id="adminCompanySwitcher" data-access="admin" hidden>
+            <span>Entity Code</span>
+            <select id="adminCompanySelect" aria-label="Filter by entity"></select>
+          </label>
+          <label class="search">
+            <span aria-hidden="true">Search</span>
+            <input id="globalSearch" type="search" placeholder="Search documents">
+          </label>
+          <div class="profile">
+            <button class="icon-button" type="button" aria-label="Notifications">!</button>
+            <div class="profile-identity-pill">
+              <div class="profile-photo-control">
+                <button class="profile-photo-view-button" type="button" id="viewProfilePhoto" aria-label="View profile picture" title="View profile picture">
+                  <img src="assets/onboarding-banner.png" alt="Profile picture" class="profile-thumb" id="profilePhoto">
+                </button>
+              </div>
+              <div class="profile-identity-copy">
+                <strong id="profileName">Maya Patel</strong>
+                <span id="profileRole">Candidate</span>
+              </div>
+            </div>
+            <button class="secondary logout-button" type="button" id="logoutButton">Logout</button>
+          </div>
+        </header>
+
+        <section class="portal-view active-view" id="candidate" data-view="candidate">
+          <section class="panel candidate-identity-panel" id="candidateIdentityCard" aria-live="polite"></section>
+          <section class="panel candidate-offer-panel" id="candidateOfferSection">
+            <div class="panel-head">
+              <div>
+                <span class="eyebrow">Step 1</span>
+                <h2>Offer Letter Acceptance</h2>
+                <p>Review and accept your employment offer before continuing with onboarding.</p>
+              </div>
+              <span class="save-state" id="candidateOfferState">Acceptance required</span>
+            </div>
+            <div class="offer-letter-card">
+              <div class="offer-letterhead">
+                <img src="assets/Vayana-Logo.svg" alt="Vayana">
+                <span>Employment Offer</span>
+              </div>
+              <p>Dear <strong id="offerCandidateName">Candidate</strong>,</p>
+              <p>We are pleased to offer you the position of <strong id="offerCandidateRole">Candidate</strong> at Vayana Network. Your expected joining date is <strong id="offerCandidateStart">To be confirmed</strong>.</p>
+              <p>By accepting this offer, you confirm that you have reviewed the offer details shared by Vayana and agree to proceed with the pre-onboarding requirements.</p>
+              <label class="offer-doj-field">
+                <span>Choose your Date of Joining</span>
+                <input type="date" id="offerJoiningDate" required>
+                <small>Select the date on which you will join Vayana.</small>
+              </label>
+              <label class="offer-acceptance-control">
+                <input type="checkbox" id="acceptOfferCheckbox">
+                <span>I have read and accept the Vayana employment offer.</span>
+              </label>
+              <div class="form-actions">
+                <button class="primary" type="button" id="acceptOfferButton" disabled>Accept Offer and Continue</button>
+                <button class="secondary danger-action" type="button" id="declineOfferButton">Decline Offer</button>
+              </div>
+            </div>
+          </section>
+          <input class="candidate-view-toggle" type="checkbox" id="personalInfoViewToggle" aria-hidden="true">
+          <section class="panel candidate-personal-info-panel" id="candidatePersonalInfoSection" hidden>
+            <div class="panel-head">
+              <div>
+                <span class="eyebrow">Step 2</span>
+                <h2>Personal Information</h2>
+                <p>Complete your personal and emergency contact details before uploading documents.</p>
+              </div>
+              <span class="save-state" id="candidatePersonalInfoState">Required</span>
+            </div>
+            <form class="candidate-personal-info-form" id="candidatePersonalInfoForm" novalidate>
+              <label>
+                Title
+                <select id="candidateTitle" required>
+                  <option value="">Select title</option>
+                  <option value="Mr.">Mr.</option>
+                  <option value="Ms.">Ms.</option>
+                  <option value="Mrs.">Mrs.</option>
+                  <option value="Dr.">Dr.</option>
+                </select>
+              </label>
+              <label class="form-span-2">
+                Full Name (As per Aadhar Card)
+                <input id="candidateFullName" type="text" autocomplete="name" required>
+              </label>
+              <label>
+                Date of Birth
+                <input id="candidateDob" type="date" autocomplete="bday" required>
+              </label>
+              <label>
+                Gender
+                <select id="candidateGender" required>
+                  <option value="">Select gender</option>
+                  <option value="female">Female</option>
+                  <option value="male">Male</option>
+                  <option value="non-binary">Non-binary</option>
+                  <option value="prefer-not-to-say">Prefer not to say</option>
+                </select>
+              </label>
+              <label>
+                Marital Status
+                <select id="candidateMaritalStatus" required>
+                  <option value="">Select status</option>
+                  <option value="single">Single</option>
+                  <option value="married">Married</option>
+                  <option value="divorced">Divorced</option>
+                  <option value="widowed">Widowed</option>
+                </select>
+              </label>
+              <label>
+                Personal Email
+                <input id="candidatePersonalEmail" type="email" autocomplete="email" required>
+              </label>
+              <label>
+                Mobile Number
+                <input id="candidateMobile" type="tel" autocomplete="tel" required>
+              </label>
+              <label>
+                Blood Group
+                <select id="candidateBloodGroup" required>
+                  <option value="">Select </option>
+                  <option value="A+">A+</option>
+                  <option value="A-">A-</option>
+                  <option value="B+">B+</option>
+                  <option value="B-">B-</option>
+                  <option value="O+">O+</option>
+                  <option value="O-">O-</option>
+                  <option value="AB+">AB+</option>
+                  <option value="AB-">AB-</option>
+                </select>
+              </label>
+              <label class="form-span-2">
+                Current Address
+                <textarea id="candidateCurrentAddress" autocomplete="street-address" required></textarea>
+              </label>
+              <label class="same-address-control">
+                <input id="candidateSameAddress" type="checkbox">
+                <span>Permanent address is the same as current address</span>
+              </label>
+              <label class="form-span-2">
+                Permanent Address
+                <textarea id="candidatePermanentAddress" required></textarea>
+              </label>
+              <div class="form-section-title form-span-all">Emergency Contact</div>
+              <label>
+                Contact Name
+                <input id="candidateEmergencyName" type="text" required>
+              </label>
+              <label>
+                Relationship
+                <input id="candidateEmergencyRelationship" type="text" placeholder="e.g. Parent, spouse" required>
+              </label>
+              <label>
+                Contact Number
+                <input id="candidateEmergencyMobile" type="tel" required>
+              </label>
+              <div class="form-actions form-span-all">
+                <button class="primary" type="submit">Save and Continue</button>
+              </div>
+            </form>
+          </section>
+
+          <div id="candidateDocumentsSection" hidden>
+            <div class="section-head">  
+              <div>
+                <span class="eyebrow">Step 3</span>
+                <h2>Pre-Onboarding Document Uploads</h2>
+              </div>
+              <div class="candidate-step-actions">
+                <button class="secondary candidate-view-personal-button" type="button" id="viewCandidatePersonalInfo">View Personal Information</button>
+                <span class="save-state" id="documentUploadState">No uploads yet</span>
+              </div>
+            </div>
+            <section class="panel">
+              <div class="upload-summary">
+                <div>
+                  <span>Candidate</span>
+                  <strong id="candidateSummaryName">Maya Patel</strong>
+                </div>
+                <div>
+                  <span>Candidate Type</span>
+                  <strong id="candidateExperienceLevel">Experienced</strong>
+                </div>
+                <div>
+                  <span>Uploaded</span>
+                  <strong id="uploadedDocCount">0/9</strong>
+                </div>
+                <div>
+                  <span>HR Status</span>
+                  <strong id="candidateReviewStatus">Pending Review</strong>
+                </div>
+                <div>
+                  <span>Background Verification</span>
+                  <button class="bgv-status-button" type="button" id="candidateBgvStatus" disabled>BGV Pending</button>
+                </div>
+              </div>
+              <div class="task-dashboard" id="candidateTaskDashboard">
+                <div class="task-dashboard-head">
+                  <div>
+                    <h3>Task Dashboard</h3>
+                    <p>Track your onboarding tasks, upload documents, and complete required details here.</p>
+                    <p class="task-rename-note"><strong>While uploading all your documents please rename the files properly like "Priya Mehta Signed Offer Letter" or "Priya Mehta Graduation Certificate"</strong></p>
+                  </div>
+                </div>
+                <div class="task-dashboard-board" id="candidateTaskBoard"></div>
+              </div>
+              <div class="document-upload-list is-hidden" id="documentUploadList" hidden></div>
+              <div class="offer-actions">
+                <button class="primary" type="button" id="saveDocuments">Save Progress</button>
+                <button class="secondary" type="button" id="clearDocuments">Clear Uploads</button>
+                <button class="primary" type="button" id="continueToMedicalCoverage">Continue to Medical Coverage</button>
+              </div>
+            </section>
+          </div>
+
+          <section class="panel candidate-medical-panel" id="candidateMedicalSection" hidden>
+            <div class="panel-head">
+              <div>
+                <span class="eyebrow">Step 4</span>
+                <h2>Group Medical Coverage Details</h2>
+                <p>Provide family details required for group medical insurance enrolment.</p>
+              </div>
+              <span class="save-state" id="candidateMedicalState">Not completed</span>
+            </div>
+            <form class="candidate-personal-info-form medical-coverage-form" id="candidateMedicalForm">
+              <div class="form-section-title form-span-all">Candidate Details</div>
+              <label>
+                Candidate Name
+                <input id="medicalEmployeeName" type="text" readonly>
+              </label>
+              <label>
+                Gender
+                <input id="medicalEmployeeGender" type="text" readonly>
+              </label>
+              <label>
+                Official Email Address
+                <input id="medicalEmployeeEmail" type="email" readonly>
+              </label>
+              <label>
+                Mobile Number
+                <input id="medicalEmployeeMobile" type="tel" readonly>
+              </label>
+              <label>
+                Date of Birth
+                <input id="medicalEmployeeDob" type="date" readonly>
+              </label>
+
+              <div class="form-section-title form-span-all">Spouse Details <small>Optional</small></div>
+              <label>
+                Spouse Name
+                <input id="medicalSpouseName" type="text">
+              </label>
+              <label>
+                Spouse Gender
+                <select id="medicalSpouseGender">
+                  <option value="">Select gender</option>
+                  <option value="female">Female</option>
+                  <option value="male">Male</option>
+                  <option value="other">Other</option>
+                </select>
+              </label>
+              <label>
+                Spouse Date of Birth
+                <input id="medicalSpouseDob" type="date">
+              </label>
+
+              <div class="form-section-title form-span-all">Children Details <small>Optional — up to three children</small></div>
+              <label>
+                Child 1 Name
+                <input id="medicalChild1Name" type="text">
+              </label>
+              <label>
+                Child 1 Gender
+                <select id="medicalChild1Gender">
+                  <option value="">Select gender</option>
+                  <option value="female">Female</option>
+                  <option value="male">Male</option>
+                  <option value="other">Other</option>
+                </select>
+              </label>
+              <label>
+                Child 1 Date of Birth
+                <input id="medicalChild1Dob" type="date">
+              </label>
+              <label>
+                Child 2 Name
+                <input id="medicalChild2Name" type="text">
+              </label>
+              <label>
+                Child 2 Gender
+                <select id="medicalChild2Gender">
+                  <option value="">Select gender</option>
+                  <option value="female">Female</option>
+                  <option value="male">Male</option>
+                  <option value="other">Other</option>
+                </select>
+              </label>
+              <label>
+                Child 2 Date of Birth
+                <input id="medicalChild2Dob" type="date">
+              </label>
+              <label>
+                Child 3 Name
+                <input id="medicalChild3Name" type="text">
+              </label>
+              <label>
+                Child 3 Gender
+                <select id="medicalChild3Gender">
+                  <option value="">Select gender</option>
+                  <option value="female">Female</option>
+                  <option value="male">Male</option>
+                  <option value="other">Other</option>
+                </select>
+              </label>
+              <label>
+                Child 3 Date of Birth
+                <input id="medicalChild3Dob" type="date">
+              </label>
+
+              <div class="form-section-title form-span-all">Parent Details</div>
+              <label>
+                Mother / Mother-in-law
+                <select id="medicalMotherRelation">
+                  <option value="">Select relationship</option>
+                  <option value="not-applicable">Not applicable</option>
+                  <option value="mother">Mother</option>
+                  <option value="mother-in-law">Mother-in-law</option>
+                </select>
+              </label>
+              <label>
+                Name
+                <input id="medicalMotherName" type="text">
+              </label>
+              <label>
+                Date of Birth
+                <input id="medicalMotherDob" type="date">
+              </label>
+              <label>
+                Father / Father-in-law
+                <select id="medicalFatherRelation">
+                  <option value="">Select relationship</option>
+                  <option value="not-applicable">Not applicable</option>
+                  <option value="father">Father</option>
+                  <option value="father-in-law">Father-in-law</option>
+                </select>
+              </label>
+              <label>
+                Name
+                <input id="medicalFatherName" type="text">
+              </label>
+              <label>
+                Date of Birth
+                <input id="medicalFatherDob" type="date">
+              </label>
+
+              <div class="form-actions form-span-all medical-form-actions">
+                <button class="secondary" type="button" id="backToDocuments">Back to Documents</button>
+                <span class="medical-save-message" id="medicalSaveMessage" aria-live="polite"></span>
+                <button class="primary" type="submit">Save Medical Coverage Details</button>
+              </div>
+            </form>
+          </section>
+
+          <section class="panel candidate-queries-panel" id="candidateQueriesSection" hidden>
+            <div class="panel-head">
+              <div>
+                <span class="eyebrow">Support</span>
+                <h2>Raise a Query</h2>
+                <p>Send a question to HR. Replies from Admin will appear here.</p>
+              </div>
+              <span class="save-state" id="candidateQueryState">Ready</span>
+            </div>
+            <form class="candidate-query-form" id="candidateQueryForm">
+              <label>
+                Subject
+                <input id="candidateQuerySubject" type="text" maxlength="120" placeholder="e.g. Document upload issue" required>
+              </label>
+              <label>
+                Message
+                <textarea id="candidateQueryMessage" rows="4" maxlength="2000" placeholder="Describe your question or issue" required></textarea>
+              </label>
+              <div class="form-actions">
+                <button class="primary" type="submit">Submit query</button>
+              </div>
+            </form>
+            <div class="candidate-query-list" id="candidateQueryList"></div>
+          </section>
+        </section>
+
+        <section class="portal-view" id="admin" data-view="admin">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Admin portal</span>
+              <h2>Candidate Document Access</h2>
+            </div>
+            <span class="save-state" id="adminDocumentState">Waiting for uploads</span>
+          </div>
+          <div class="admin-workspace">
+            <div class="admin-pages">
+              <div class="admin-page active-admin-page" data-admin-panel="employees">
+                <div class="candidates-toolbar candidates-toolbar-page">
+                  <div class="candidates-status-row">
+                    <span class="save-state" id="employeeInviteState">Ready to send invites</span>
+                    <span class="save-state" id="employeeSheetState">Browser storage</span>
+                  </div>
+                  <div class="candidates-action-row">
+                    <button class="secondary" type="button" id="syncEmployeeSheet">Sync Candidates</button>
+                    <button class="secondary" type="button" id="downloadEmployeeSheet">Download Excel</button>
+                    <button class="secondary" type="button" id="downloadAllEntitiesSheet">Download All Entities</button>
+                  </div>
+                </div>
+                <div class="admin-doc-layout">
+                  <section class="panel candidates-list-panel">
+                    <div class="panel-head">
+                      <div>
+                        <span class="eyebrow">Candidates</span>
+                        <h2>All Candidates</h2>
+                      </div>
+                    </div>
+                    <div class="employee-list" id="allEmployeeList"></div>
+                  </section>
+                  <section class="panel candidates-review-panel">
+                    <div class="panel-head">
+                      <div>
+                        <span class="eyebrow">Review documents</span>
+                        <h2 id="candidatesSelectedName">Select a candidate</h2>
+                      </div>
+                    </div>
+                    <div class="upload-summary">
+                      <div>
+                        <span>Candidate</span>
+                        <strong id="selectedEmployeeName">Maya Patel</strong>
+                      </div>
+                      <div>
+                        <span>Received</span>
+                        <strong id="adminUploadedDocCount">0/9</strong>
+                      </div>
+                      <div>
+                        <span>Review Queue</span>
+                        <strong id="adminPendingDocCount">0 pending</strong>
+                      </div>
+                      <div class="bgv-summary-action">
+                        <span>BGV</span>
+                        <strong id="adminBgvStatus">Pending</strong>
+                        <div class="bgv-controls">
+                          <button class="secondary" type="button" id="verifyBgvButton">Verify BGV</button>
+                          <button class="secondary danger" type="button" id="rejectBgvButton">Reject</button>
+                        </div>
+                      </div>
+                      <div class="onboard-summary-action">
+                        <span>Final Action</span>
+                        <button class="primary" type="button" id="onboardEmployeeButton" disabled>Onboard</button>
+                      </div>
+                    </div>
+                    <div class="admin-personal-details" id="adminPersonalDetails"></div>
+                    <div class="admin-personal-details admin-medical-details" id="adminMedicalDetails"></div>
+                    <div class="admin-personal-details admin-employment-details" id="adminEmploymentDetails"></div>
+                    <div class="admin-document-list" id="adminDocumentList"></div>
+                  </section>
+                </div>
+              </div>
+
+              <div class="admin-page" data-admin-panel="onboarded">
+                <div class="admin-doc-layout">
+                  <section class="panel">
+                    <div class="panel-head">
+                      <div>
+                        <span class="eyebrow">Completed</span>
+                        <h2>Onboarded Candidates</h2>
+                      </div>
+                    </div>
+                    <div class="employee-list" id="onboardedEmployeeList"></div>
+                  </section>
+                  <section class="panel">
+                    <div class="panel-head">
+                      <div>
+                        <span class="eyebrow">Candidate record</span>
+                        <h2 id="onboardedEmployeeName">Select a candidate</h2>
+                      </div>
+                    </div>
+                    <div id="onboardedEmployeeDetails"></div>
+                  </section>
+                </div>
+              </div>
+
+              <div class="admin-page" data-admin-panel="addEmployee">
+                <section class="panel add-employee-panel">
+                  <div class="panel-head">
+                    <div>
+                      <span class="eyebrow">Admin action</span>
+                      <h2 id="employeeFormTitle">Add New Candidate</h2>
+                    </div>
+                    <span class="save-state" id="employeeAddState">Ready</span>
+                  </div>
+                  <form class="add-employee-form" id="addEmployeeForm">
+                    <label>
+                      Company
+                      <select id="newEmployeeCompany" required></select>
+                    </label>
+                    <label>
+                      Full Name
+                      <input id="newEmployeeName" type="text" placeholder="e.g. Riya Mehta" required>
+                    </label>
+                    <label>
+                      Email
+                      <input id="newEmployeeEmail" type="email" placeholder="riya.mehta@example.com" required>
+                    </label>
+                    <label>
+                      Role
+                      <input id="newEmployeeRole" type="text" placeholder="e.g. Product Manager" required>
+                    </label>
+                    <label>
+                      Candidate Type
+                      <select id="newEmployeeExperienceLevel" required>
+                        <option value="experienced">Experienced</option>
+                        <option value="fresher">Fresher</option>
+                      </select>
+                    </label>
+                    <label id="newEmployeeInternshipOption" hidden>
+                      Internship Experience
+                      <select id="newEmployeeHasInternship">
+                        <option value="no">No internship letters</option>
+                        <option value="yes">Has internship letters to upload</option>
+                      </select>
+                    </label>
+                    <label>
+                      Start Date
+                      <input id="newEmployeeStart" type="date" required>
+                    </label>
+                    <div class="form-actions">
+                      <button class="primary" id="employeeFormSubmit" type="submit">Add Candidate</button>
+                      <button class="secondary" id="cancelEmployeeEdit" type="button" hidden>Cancel</button>
+                    </div>
+                  </form>
+                </section>
+              </div>
+
+              <div class="admin-page" data-admin-panel="emailSettings">
+                <section class="panel add-employee-panel">
+                  <div class="panel-head">
+                    <div>
+                      <span class="eyebrow">Email connection</span>
+                      <h2>Candidate Invite Sender</h2>
+                    </div>
+                    <span class="save-state" id="emailSettingsState">Not connected</span>
+                  </div>
+                  <form class="add-employee-form email-settings-form" id="emailSettingsForm">
+                    <label>
+                      Sender Name
+                      <input id="senderName" type="text" placeholder="Vayana HR Team" required>
+                    </label>
+                    <label>
+                      Sender Email
+                      <input id="senderEmail" type="email" placeholder="hr@vayana.com" required>
+                    </label>
+                    <label>
+                      SMTP Host
+                      <input id="smtpHost" type="text" placeholder="smtp.gmail.com" required>
+                    </label>
+                    <label>
+                      SMTP Port
+                      <input id="smtpPort" type="number" placeholder="587" required>
+                    </label>
+                    <label>
+                      SMTP Username
+                      <input id="smtpUser" type="text" placeholder="hr@vayana.com" required>
+                    </label>
+                    <label>
+                      App Password
+                      <input id="smtpPass" type="password" placeholder="Email app password" autocomplete="new-password">
+                    </label>
+                    <div class="form-actions">
+                      <button class="primary" type="submit">Connect Email</button>
+                    </div>
+                  </form>
+                </section>
+              </div>
+
+              <div class="admin-page" data-admin-panel="queries">
+                <section class="panel">
+                  <div class="panel-head">
+                    <div>
+                      <span class="eyebrow">Candidate support</span>
+                      <h2>Queries</h2>
+                      <p>Questions raised by candidates. Reply here and they will see it in Raise Query.</p>
+                    </div>
+                    <span class="save-state" id="adminQueryState">Inbox</span>
+                  </div>
+                  <div class="candidate-query-list" id="adminQueryList"></div>
+                </section>
+              </div>
+
+              <div class="admin-page" data-admin-panel="overview">
+                <section class="panel">
+                  <div class="panel-head">
+                    <div>
+                      <span class="eyebrow">Reports</span>
+                      <h2>Document Overview</h2>
+                    </div>
+                  </div>
+                  <div class="upload-summary">
+                    <div>
+                      <span>Total Candidates</span>
+                      <strong id="overviewEmployeeCount">0</strong>
+                    </div>
+                    <div>
+                      <span>Total Uploads</span>
+                      <strong id="overviewUploadCount">0</strong>
+                    </div>
+                    <div>
+                      <span>Pending Reviews</span>
+                      <strong id="overviewPendingCount">0</strong>
+                    </div>
+                  </div>
+                  <div class="panel-head upcoming-doj-heading">
+                    <div>
+                      <span class="eyebrow">Joining schedule</span>
+                      <h3>Upcoming & Missed Dates of Joining</h3>
+                    </div>
+                  </div>
+                  <div class="upcoming-doj-list" id="upcomingDojList"></div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <dialog class="profile-photo-viewer" id="profilePhotoViewer">
+      <div class="profile-photo-viewer-head">
+        <strong>Profile Picture</strong>
+        <div class="profile-photo-viewer-actions">
+          <label class="profile-photo-button" data-access="candidate" for="profilePhotoInput">
+            Change picture
+          </label>
+          <button type="button" id="closeProfilePhotoViewer" aria-label="Close profile picture">×</button>
+        </div>
+      </div>
+      <img id="profilePhotoPreview" src="assets/onboarding-banner.png" alt="Full-size profile picture">
+    </dialog>
+
+    <script src="company-config.js?v=single-portal-1"></script>
+    <script src="app.js?v=doc-fields-ai-1"></script>
+  </body>
+</html>
